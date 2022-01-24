@@ -89,18 +89,18 @@ function continueStory(answerNumber) {
             break;
         case 3:
             if (answers[3] === "Starve to death") {
-                story.innerHTML = document.getElementById("answer23").innerHTML;
-                askQuestion(4);
-            } else if (answers[4] === "Eat your cat?") {
                 story.innerHTML = document.getElementById("answer24").innerHTML;
-                theEnd();
+               theEnd();
+            } else if (answers[3] === "Eat your cat?") {
+                story.innerHTML = document.getElementById("answer23").innerHTML;
+               youLoseYourCat,MissionAccomplished, t();
             } else {
                 story.innerHTML = document.getElementById("err2").innerHTML;
                 theEnd();
 
             }
         default:
-            story.innerHTML = "The story is over!";
+            story.innerHTML = "Mission Accomlished, however you have lost your cat!";
 
             break;
     }

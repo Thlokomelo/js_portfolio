@@ -2,15 +2,15 @@ var trainSpeed = 250;
 var trainPosition = 0;
 var animation;
 
-var startButton = document.getElementById("startButton");
-startButton.addEventListener("click", startButton);
+var train = document.getElementById("startButton");
+train.addEventListener("click", speedUp);
 
 var stopButton = document.getElementById("stopButton");
 stopButton.addEventListener("click", stopTrain);
 
 function speedUp() {
     if (trainSpeed > 10) {
-        trainSpeed -= 50;
+        trainSpeed -= 10;
     }
     console.log("train speed: " + trainSpeed);
 
@@ -32,4 +32,12 @@ function checkPosition(currentPosition) {
         console.log("Crash!");
         clearInterval(animation);
     }
+}
+
+function stopTrain() {
+    if (trainPosition < 260) {
+        clearInterval(animation);
+        console.log("Whew! That was close!");
+    }
+    
 }

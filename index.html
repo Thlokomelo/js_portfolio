@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>My Portfolio</title>
   <meta charset="utf-8">
@@ -7,142 +8,190 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
-    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    /* Remove the navbar's default margin-bottom and rounded borders */
     .navbar {
       margin-bottom: 0;
       border-radius: 0;
     }
-    
+
     /* Add a gray background color and some padding to the footer */
     footer {
-      background-color: #f2f2f2;
+      background-color: #4a565a;
       padding: 25px;
+    }
+
+    .fa {
+      padding: 20px;
+      font-size: 30px;
+      width: 50px;
+      text-align: center;
+      text-decoration: none;
+      margin: 5px 2px;
+    }
+
+    .fa:hover {
+      opacity: 0.7;
+    }
+
+    .fa-facebook {
+      background: #3B5998;
+      color: white;
+    }
+
+    .fa-twitter {
+      background: #55ACEE;
+      color: white;
+    }
+
+    .fa-google {
+      background: #dd4b39;
+      color: white;
     }
   </style>
 </head>
+
 <body>
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">Portfolio</a>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Portfolio</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="home.html">Home</a></li>
+          <li><a href="about.HTML">About</a></li>
+          <li><a href="contact.HTML">Contact</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="home.HTML">Home</a></li>
-        <li><a href="about.HTML">About</a></li>
-        <li><a href="contact.HTML">Contact</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul>
+  </nav>
+
+  <div class="jumbotron">
+    <div class="container text-center">
+      <h1>My Portfolio</h1>
+      <p>2022 Introduction to Programming</p>
     </div>
   </div>
-</nav>
 
-<div class="jumbotron">
-  <div class="container text-center">
-    <h1>My Portfolio</h1>      
-    <p>2022 Introduction to Programming</p>
-  </div>
-</div>
-  
-<div class="container-fluid bg-3 text-center">    
-  <h3>My Classwork</h3><br>
-  <div class="row">
-    <div class="col-sm-3">
-      <p>chap05</p>
-     <a href= "Chap05/chap05.html">
-      <img src="Image/chap05.PNG" class="img-responsive" style="width:100%" alt="Image">
-      </a>
-    </div>
-    <div class="col-sm-3"> 
-      <p>chap06</p>
-      <a href= "Chap06/chap06.HTML">
-        <img src="Image/chap06.PNG" class="img-responsive" style="width:100%" alt="Image">
-    </a>
-    </div>
-    <div class="col-sm-3"> 
-      <p>Chap08</p>
-      <a href= "Chap08/chap08.HTML">
-        <img src="Image/chap08.PNG" class="img-responsive" style="width:100%" alt="Image">
-    </a>
-    </div>
-    <div class="col-sm-3">
-      <p>Chap09</p>
-      <a href= "Chap09/chap09.HTML"></a>
-      <img src="Image/chap09.PNG" class="img-responsive" style="width:100%" alt="Image">
-    </a>
-    </div>
-  </div>
-</div><br>
+  <div class="container-fluid bg-3 text-center">
+    <h3>My Classwork</h3> <br>
+    <div class="row">
+      <div class="col-sm-3">
+        <p>chap05</p>
+        <a href="Chap05/chap05.html">
+          <img src="Image/chap05.PNG" class="img-responsive" style="width:100%" alt="Image">
+        </a>
+      </div>
+      <div class="col-sm-3">
+        <p>chap06</p>
+        <a href="Chap06/chap06.HTML">
+          <img src="Image/chap06.PNG" class="img-responsive" style="width:100%" alt="Image">
+        </a>
+      </div>
+      <div class="col-sm-3">
+        <p>Chap08</p>
+        <a href="Chap08/chap08.HTML">
+          <img src="Image/chap08.PNG" class="img-responsive" style="width:100%" alt="Image">
+        </a>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <p>Chap09</p>
+          <a href="Chap09/chap09.HTML">
+            <img src="Image/chap09.PNG" class="img-responsive" style="width:100%" alt="Image">
+          </a>
+        </div>
+      </div>
+    </div><br>
 
-<div class="container-fluid bg-3 text-center">    
-  <div class="row">
-    <div class="col-sm-3">
-      <p>Chap10</p>
-      <a href= "chap10/chap10.HTML">
-        <img src="Image/chap10.PNG" class="img-responsive" style="width:100%" alt="Image">
-    </a>
-    </div>
-    <div class="col-sm-3"> 
-        <p>Chap12</p>
-      <a href= "Chap12/chap12.HTML">
-        <img src="Image/chap 12.PNG" class="img-responsive" style="width:100%" alt="Image">
-    </a>
-    </div>
-    <div class="col-sm-3"> 
-      <p>Chap13</p>
-      <a href= "Chap13/chap13.HTML">
-        <img src="Image/chap13.PNG" class="img-responsive" style="width:100%" alt="Image">
-    </a>
-    </div>
-    <div class="col-sm-3">
-      <p>Chap14.</p>
-      <a href= "Chap14/chap14.HTML">
-        <img src="Image/chap14.PNG" class="img-responsive" style="width:100%" alt="Image">
-    </a>
-    </div>
-</div><br>
+    <div class="container-fluid bg-3 text-center">
+      <div class="row">
+        <div class="col-sm-3">
+          <p>Chap10</p>
+          <a href="chap10/chap10.HTML">
+            <img src="Image/chap10.PNG" class="img-responsive" style="width:100%" alt="Image">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <p>Chap12</p>
+          <a href="Chap12/chap12.HTML">
+            <img src="Image/chap 12.PNG" class="img-responsive" style="width:100%" alt="Image">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <p>Chap13</p>
+          <a href="Chap13/chap13.HTML">
+            <img src="Image/chap13.PNG" class="img-responsive" style="width:100%" alt="Image">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <p>Chap14.</p>
+          <a href="Chap14/chap14.HTML">
+            <img src="Image/chap14.PNG" class="img-responsive" style="width:100%" alt="Image">
+          </a>
+        </div>
+      </div><br>
 
-<div class="container-fluid bg-3 text-center">    
-  <div class="row">
-    <div class="col-sm-3">
-      <p>Chap15</p>
-      <a href= "Chapter15/chap15.html">
-        <img src="Image/chap15.PNG" class="img-responsive" style="width:100%" alt="Image">
-    </a>
-    </div>
-    <div class="col-sm-3"> 
-        <p>Chap16</p>
-      <a href= "Chapter16/chap16.html">
-        <img src="Image/chap16.PNG" class="img-responsive" style="width:100%" alt="Image">
-    </a>
-    </div>
-    <div class="col-sm-3"> 
-      <p>Guess Game</p>
-      <a href= "Guess Game/guessgame.HTML">
-        <img src="Image/guessgame.PNG" class="img-responsive" style="width:100%" alt="Image">
-    </a>
-    </div>
-    <div class="col-sm-3">
-      <p>Shopping Cart.</p>
-      <a href= "ShoppingCart/shopStart.HTML">
-        <img src="Image/shoppingcart.PNG" class="img-responsive" style="width:100%" alt="Image">
-    </a>
-    </div>
-  </div>
-</div><br><br>
+      <div class="container-fluid bg-3 text-center">
+        <div class="row">
+          <div class="col-sm-3">
+            <p>Chap15</p>
+            <a href="Chapter15/chap15.html">
+              <img src="Image/chap15.PNG" class="img-responsive" style="width:100%" alt="Image">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <p>Chap16</p>
+            <a href="Chapter16/chap16.html">
+              <img src="Image/chap16.PNG" class="img-responsive" style="width:100%" alt="Image">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <p>Guess Game</p>
+            <a href="Guess Game/guessgame.HTML">
+              <img src="Image/guessgame.PNG" class="img-responsive" style="width:100%" alt="Image">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <p>Shopping Cart.</p>
+            <a href="ShoppingCart/shopStart.HTML">
+              <img src="Image/shoppingcart.PNG" class="img-responsive" style="width:100%" alt="Image">
+            </a>
+          </div>
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <p>chap18.</p>
+          <a href="chap 18/chap18.HTML">
+            <img src="Image/chap18.PNG" class="img-responsive" style="width:100%" alt="Image">
+          </a>
+        </div>
+      </div>
+    </div><br><br>
 
-<footer class="container-fluid text-center">
-  <p>Footer Text</p>
-</footer>
+    <footer class="bg-dark-1">
+      <section id="footer" class="py-5">
+        <div class="container text-center">
+        
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-google"></a>
+        </div>
+      </section>
+    </footer>
+
 
 </body>
+
 </html>
